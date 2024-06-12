@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Contact form</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/dist/style.css" />
+    <!-- Javascripts -->
+    <script type="module" src="/script.js"></script>
+  </head>
+  <body>
+    <form action="#" class="container" novalidate>
+      <h2>Contact Us</h2>
+
+      <div class="input-text first-name">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <div class="error"></div>
+      </div>
+
+      <div class="input-text last-name">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <div class="error"></div>
+      </div>
+
+      <div class="input-text email">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" />
+        <div class="error"></div>
+      </div>
+
+      <div class="input-options query">
+        <label>Query Type</label>
+        <div class="options-container">
+          <button type="button" class="option">
+            <input name="query" type="radio" id="gen-enq" />
+            <label for="gen-enq">General Enquiry</label>
+          </button>
+          <button type="button" class="option">
+            <input name="query" type="radio" id="sup-req" />
+            <label for="sup-req">Support Request</label>
+          </button>
+        </div>
+        <div class="error"></div>
+      </div>
+
+      <div class="input-text message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <div class="error"></div>
+      </div>
+
+      <div class="input-checkbox consent">
+        <input type="checkbox" id="consent" />
+        <label for="consent">I consent to being contacted by the team</label>
+        <div class="error"></div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div class="success-msg">
+      <div class="header">
+        <img src="/assets/images/icon-success-check.svg" alt="Check" />
+        <h3>Message Sent!</h3>
+      </div>
+      <p>Thanks for completing this form. We'll be in touch soon!</p>
+    </div>
+    <!--     Contact Us First Name This field is required Last Name This field is
+    required Email Address Please enter a valid email address This field is
+    required Query Type General Enquiry Support Request Please select a query
+    type Message This field is required I consent to being contacted by the team
+    To submit this form, please consent to being contacted Submit Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+  </body>
+</html>
